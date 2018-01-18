@@ -7,7 +7,7 @@ object Problem5 {
   }
 
   def main(args: Array[String]): Unit = {
-    println(s"Answer: ${(2520 until Int.MaxValue by 10).filter(isEvenlyDivisibleBy(1 to 20)).head}")
+    println(s"Answer: ${Stream.from(2520, 10).filter(isEvenlyDivisibleBy(1 to 20)).head}")
   }
 
 }
