@@ -20,7 +20,7 @@ class TestProblem11 extends FlatSpec with Matchers {
   }
 
   "diagUp" should "return the right diags" in {
-    testBlock.diagUp should be(List(List(1, 5, 9), List(2, 6), List(3)))
+    testBlock.diagUp should be(List(List(7), List(4, 8), List(1, 5, 9), List(2, 6), List(3)))
   }
 
 }
