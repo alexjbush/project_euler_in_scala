@@ -23,4 +23,13 @@ class TestProblem11 extends FlatSpec with Matchers {
     testBlock.diagUp should be(List(List(7), List(4, 8), List(1, 5, 9), List(2, 6), List(3)))
   }
 
+  "highestProductInLine" should "return the example" in {
+    testBlock.highestProductInLine(4)(List(6, 26, 63, 78, 14, 5)) should be(1788696)
+  }
+
+  "problemNumbers" should "return correct values" in {
+    Problem11.problemNumbers.head should be(8)
+    Problem11.problemNumbers.last should be(48)
+  }
+
 }
