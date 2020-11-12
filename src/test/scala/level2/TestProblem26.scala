@@ -1,8 +1,9 @@
 package level2
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class TestProblem26 extends FlatSpec with Matchers {
+class TestProblem26 extends AnyFlatSpec with Matchers {
 
   "toFraction" should "give the example" in {
     Problem26.toFraction(1, 2, 10).toList should be(Seq(5))

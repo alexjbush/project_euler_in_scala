@@ -1,8 +1,9 @@
 package level1
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class TestProblem19 extends FlatSpec with Matchers {
+class TestProblem19 extends AnyFlatSpec with Matchers {
 
   "Date" should "be correct" in {
     Problem19.Date(1, 3, 1904, 3).isLeapYear should be (true)

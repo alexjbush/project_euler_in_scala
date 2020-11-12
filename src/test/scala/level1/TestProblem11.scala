@@ -1,8 +1,9 @@
 package level1
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class TestProblem11 extends FlatSpec with Matchers {
+class TestProblem11 extends AnyFlatSpec with Matchers {
 
   val test = List(1, 2, 3, 4, 5, 6, 7, 8, 9)
   val testBlock = Problem11.Block(test)

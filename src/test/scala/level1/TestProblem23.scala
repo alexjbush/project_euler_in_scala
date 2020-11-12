@@ -1,9 +1,10 @@
 package level1
 
 import level1.Problem23.{Abundant, Perfect}
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class TestProblem23 extends FlatSpec with Matchers {
+class TestProblem23 extends AnyFlatSpec with Matchers {
 
   "getDivisors" should "look like example" in {
     Problem23.getDivisors(28) should be(Seq(1, 2, 4, 7, 14))

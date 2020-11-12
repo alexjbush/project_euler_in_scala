@@ -1,8 +1,9 @@
 package level1
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class TestProblem22 extends FlatSpec with Matchers {
+class TestProblem22 extends AnyFlatSpec with Matchers {
 
   "loadNames" should "load and split the names properly" in {
     val names = Problem22.loadNames

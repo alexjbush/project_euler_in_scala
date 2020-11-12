@@ -6,7 +6,7 @@ object Problem9 {
     Stream.from(2).flatMap { b =>
       (1 until b).map { a =>
         (a * a, b * b, a * a + b * b)
-      }.filter(v => math.sqrt(v._3).isWhole())
+      }.filter(v => math.sqrt(v._3).isWhole)
         .map(z => (math.sqrt(z._1).toInt, math.sqrt(z._2).toInt, math.sqrt(z._3).toInt))
     }
   }

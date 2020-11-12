@@ -1,8 +1,9 @@
 package level1
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class TestProblem3 extends FlatSpec with Matchers {
+class TestProblem3 extends AnyFlatSpec with Matchers {
 
   "isPrime" should "detect prime numbers" in {
     Problem3.isPrime(9) should be(false)

@@ -1,8 +1,9 @@
 package level1
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class TestProblem4 extends FlatSpec with Matchers {
+class TestProblem4 extends AnyFlatSpec with Matchers {
 
   "isPalindrome" should "detect palindromes" in {
     Problem4.isPalindrome(9) should be(true)

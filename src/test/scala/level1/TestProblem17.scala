@@ -1,8 +1,9 @@
 package level1
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class TestProblem17 extends FlatSpec with Matchers {
+class TestProblem17 extends AnyFlatSpec with Matchers {
 
 
   "numberToWords" should "get the example" in {

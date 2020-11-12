@@ -1,8 +1,9 @@
 package level1
 
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class TestProblem6 extends FlatSpec with Matchers {
+class TestProblem6 extends AnyFlatSpec with Matchers {
 
   "sumOfSquares" should "equal example" in {
     Problem6.sumOfSquares(1 to 10) should be(385)

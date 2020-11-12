@@ -1,10 +1,10 @@
 package level1
 
-import level1.Problem23.{Abundant, Perfect}
 import level1.Problem24.Permutation
-import org.scalatest.{FlatSpec, Matchers}
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.should.Matchers
 
-class TestProblem24 extends FlatSpec with Matchers {
+class TestProblem24 extends AnyFlatSpec with Matchers {
 
   "permutationStream" should "give the example" in {
     Problem24.permutationStream(Seq(0, 1, 2)).toList should be(

@@ -13,7 +13,7 @@ object Problem12 {
   }
 
   def getFactors(n: Int): Seq[Int] = {
-    val (sqrtN, isSquare) = (math.sqrt(n).floor.toInt, math.sqrt(n).isWhole())
+    val (sqrtN, isSquare) = (math.sqrt(n).floor.toInt, math.sqrt(n).isWhole)
 
     def loop(i: Int, low: Vector[Int], high: Vector[Int]): Seq[Int] = {
       if (i > sqrtN) low ++ high
